@@ -1,0 +1,9 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+}
