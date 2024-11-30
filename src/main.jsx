@@ -9,7 +9,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <FavsProvider>
       <App />
-      <Toaster richColors />
+      <Toaster richColors closeButton duration={2500} />
     </FavsProvider>
   </StrictMode>
 )
