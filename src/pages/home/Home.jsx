@@ -1,6 +1,6 @@
 import Card from '@/components/card/Card'
 import { useGetDigimonList } from '@/hooks/useGetDigimonList'
-import Layout from '@/layout/Layout'
+import Layout from '@/layouts/Layout'
 import styles from './Home.module.css'
 
 const Home = () => {

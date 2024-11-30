@@ -1,4 +1,4 @@
-import Layout from '@/layout/Layout'
+import Layout from '@/layouts/Layout'
 import { validateEmail, validateName } from '@/utils/validations'
 import { useState } from 'react'
 import { toast } from 'sonner'

@@ -1,6 +1,6 @@
 import Card from '@/components/card/Card'
 import { useFavs } from '@/hooks/useFavs'
-import Layout from '@/layout/Layout'
+import Layout from '@/layouts/Layout'
 import styles from './Favs.module.css'
 
 const Favs = () => {

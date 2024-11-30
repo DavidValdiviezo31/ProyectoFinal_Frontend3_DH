@@ -1,4 +1,4 @@
-import Layout from '@/layout/Layout'
+import Layout from '@/layouts/Layout'
 import styles from './NotFound.module.css'
 
 const NotFound = () => {
