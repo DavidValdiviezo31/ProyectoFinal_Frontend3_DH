@@ -5,12 +5,14 @@ import TypesTags from '@/components/typeTag/TypesTags'
 import styles from './DigimonDetail.module.css'
 
 const DigimonDetail = ({ id, name, images, descriptions, types, nextEvolutions, priorEvolutions }) => {
+  const description = descriptions.find(desc => desc.language === 'en_us')?.description || 'No description available.'
+
   return (
     <article className={styles.container}>
       <header className={styles.header}>
         <div className={styles.description}>
           <h3>Digimon Description:</h3>
-          <p>{descriptions.find(desc => desc.language === 'en_us')?.description}</p>
+          <p>{description}</p>
           <TypesTags types={types} />
         </div>
         <Card
