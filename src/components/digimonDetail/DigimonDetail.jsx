@@ -1,7 +1,7 @@
 import Card from '@/components/card/Card'
 import NextEvolutions from '@/components/nextEvolutions/NextEvolutions'
 import PriorEvolutions from '@/components/priorEvolutions/PriorEvolutions'
-import TypesTags from '@/components/typeTag/TypesTags'
+import TypesTags from '@/components/typesTags/TypesTags'
 import styles from './DigimonDetail.module.css'
 
 const DigimonDetail = ({ id, name, images, descriptions, types, nextEvolutions, priorEvolutions }) => {
