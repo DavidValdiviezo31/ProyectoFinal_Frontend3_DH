@@ -52,6 +52,7 @@ const Contact = () => {
               name='name'
               onChange={handleChange}
               value={formData.name}
+              placeholder='i.e. John Doe'
             />
           </fieldset>
           <fieldset>
@@ -64,6 +65,7 @@ const Contact = () => {
               name='email'
               onChange={handleChange}
               value={formData.email}
+              placeholder='i.e. john@email.com'
             />
           </fieldset>
           <fieldset>
@@ -75,6 +77,7 @@ const Contact = () => {
               name='message'
               onChange={handleChange}
               value={formData.message}
+              placeholder='Type your message here...'
             ></textarea>
           </fieldset>
           <button type='submit'>Send</button>
