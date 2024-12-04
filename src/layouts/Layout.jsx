@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
       </header>
       <main className={styles.main}>{children}</main>
       <footer>
-        <p>&copy; {new Date().getFullYear()} David Valdiviezo</p>
+        <p>&copy; {new Date().getFullYear()} Andrés David Intriago Valdiviezo</p>
       </footer>
     </>
   )

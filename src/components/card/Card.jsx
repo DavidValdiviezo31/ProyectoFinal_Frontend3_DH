@@ -11,7 +11,8 @@ const Card = ({ id, name, image }) => {
   const navigate = useNavigate()
 
   function handleClick (e) {
-    if (e.target.tagName === 'BUTTON' || e.target.tagName === 'svg' || e.target.tagName === 'path') return
+    const { tagName } = e.target
+    if (tagName === 'BUTTON' || tagName === 'svg' || tagName === 'path') return
     navigate(`/digimon/${id}`)
   }
 

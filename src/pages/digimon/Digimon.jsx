@@ -13,9 +13,7 @@ const Digimon = () => {
   const digimon = useGetDigimonById(id)
 
   useEffect(() => {
-    if (digimon === undefined) {
-      setDigimonExist(false)
-    }
+    if (digimon === undefined) setDigimonExist(false)
   }, [digimon])
 
   return (
