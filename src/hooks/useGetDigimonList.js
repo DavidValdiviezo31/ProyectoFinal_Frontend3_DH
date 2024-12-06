@@ -8,5 +8,5 @@ export const useGetDigimonList = () => {
     getDigimonList().then(data => setDigimonList(data))
   }, [])
 
-  return digimonList
+  return { digimonList }
 }

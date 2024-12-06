@@ -10,17 +10,17 @@ import styles from './Digimon.module.css'
 const Digimon = () => {
   const { id } = useParams()
   const [digimonExist, setDigimonExist] = useState(true)
-  const digimon = useGetDigimonById(id)
+  const { digimonDetail } = useGetDigimonById(id)
 
   useEffect(() => {
-    if (digimon === undefined) setDigimonExist(false)
-  }, [digimon])
+    if (digimonDetail === undefined) setDigimonExist(false)
+  }, [digimonDetail])
 
   return (
     <Layout>
       <section className={styles.container}>
-        {digimon && <DigimonDetail {...digimon} />}
-        {!digimon && digimonExist && <PuffLoader color='#f1356d' />}
+        {digimonDetail && <DigimonDetail {...digimonDetail} />}
+        {!digimonDetail && digimonExist && <PuffLoader color='#f1356d' />}
         {!digimonExist && <NotExist id={id} />}
       </section>
     </Layout>

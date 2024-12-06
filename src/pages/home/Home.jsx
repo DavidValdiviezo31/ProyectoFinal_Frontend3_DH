@@ -4,7 +4,7 @@ import Layout from '@/layouts/Layout'
 import styles from './Home.module.css'
 
 const Home = () => {
-  const digimonList = useGetDigimonList()
+  const { digimonList } = useGetDigimonList()
 
   return (
     <Layout>
