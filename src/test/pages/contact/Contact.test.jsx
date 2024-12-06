@@ -1,11 +1,12 @@
+import FavsProvider from '@/contexts/FavsContext'
 import Contact from '@/pages/contact/Contact'
 import { render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
 
 describe('Contact Page Tests', () => {
-  it('Button is defined', () => {
+  it('inputs are defined', () => {
     // Arrange
-    render(<Contact />)
+    render(<FavsProvider><Contact /></FavsProvider>)
     screen.debug()
 
     // Act
