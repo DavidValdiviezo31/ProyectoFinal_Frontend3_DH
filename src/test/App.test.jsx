@@ -1,7 +1,17 @@
-import { expect, test, describe } from 'vitest'
+import App from '@/App'
+import FavsProvider from '@/contexts/FavsContext'
+import { render } from '@testing-library/react'
+import { describe, expect, it } from 'vitest'
 
 describe('App', () => {
-  test('renders', () => {
-    expect(true).toBeTruthy()
+  it('App renders correctly', () => {
+    render(
+      <FavsProvider>
+        <App />
+      </FavsProvider>
+    )
+
+    const root = document.getElementById('root')
+    expect(root).toBeDefined()
   })
 })

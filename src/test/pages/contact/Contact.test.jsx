@@ -13,7 +13,6 @@ describe('Contact Page Tests', () => {
         </FavsProvider>
       </MemoryRouter>
     )
-    screen.debug()
 
     const input = screen.getAllByRole('textbox')
 

@@ -11,7 +11,7 @@ const Home = () => {
       <section className={styles.container}>
         <h1>Digimon List</h1>
         <div className={styles.grid}>
-          {digimonList.map(digimon => {
+          {digimonList && digimonList.map(digimon => {
             return (
               <Card
                 key={digimon.id}
