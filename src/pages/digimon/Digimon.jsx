@@ -1,6 +1,6 @@
 import DigimonDetail from '@/components/digimonDetail/DigimonDetail'
 import NotExist from '@/components/notExist/NotExist'
-import { useGetDigimonById } from '@/hooks/useGetDigimonById'
+import { useFetchtDigimonById } from '@/hooks/useFetchDigimonById'
 import Layout from '@/layouts/Layout'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
@@ -10,7 +10,7 @@ import styles from './Digimon.module.css'
 const Digimon = () => {
   const { id } = useParams()
   const [digimonExist, setDigimonExist] = useState(true)
-  const { digimonDetail } = useGetDigimonById(id)
+  const { digimonDetail } = useFetchtDigimonById(id)
 
   useEffect(() => {
     if (digimonDetail === undefined) setDigimonExist(false)

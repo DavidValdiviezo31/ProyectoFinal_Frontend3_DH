@@ -1,10 +1,10 @@
 import Card from '@/components/card/Card'
-import { useGetDigimonList } from '@/hooks/useGetDigimonList'
+import { useFetchDigimonList } from '@/hooks/useFetchDigimonList'
 import Layout from '@/layouts/Layout'
 import styles from './Home.module.css'
 
 const Home = () => {
-  const { digimonList } = useGetDigimonList()
+  const { digimonList } = useFetchDigimonList()
 
   return (
     <Layout>

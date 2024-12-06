@@ -1,7 +1,7 @@
 import { getDigimonList } from '@/services/digimonFetchData'
 import { useEffect, useState } from 'react'
 
-export const useGetDigimonList = () => {
+export const useFetchDigimonList = () => {
   const [digimonList, setDigimonList] = useState([])
 
   useEffect(() => {
