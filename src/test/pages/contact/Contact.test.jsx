@@ -1,19 +1,23 @@
 import FavsProvider from '@/contexts/FavsContext'
 import Contact from '@/pages/contact/Contact'
 import { render, screen } from '@testing-library/react'
+import { MemoryRouter } from 'react-router-dom'
 import { describe, expect, it } from 'vitest'
 
 describe('Contact Page Tests', () => {
-  it('inputs are defined', () => {
-    // Arrange
-    render(<FavsProvider><Contact /></FavsProvider>)
+  it('The text fields are defined and have 3 elements', () => {
+    render(
+      <MemoryRouter>
+        <FavsProvider>
+          <Contact />
+        </FavsProvider>
+      </MemoryRouter>
+    )
     screen.debug()
 
-    // Act
     const input = screen.getAllByRole('textbox')
 
-    // Assert
     expect(input).toBeDefined()
-    expect(input).toHaveLength(3)
+    expect(input.length).toBe(3)
   })
 })
